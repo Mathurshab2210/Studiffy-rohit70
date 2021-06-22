@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -13,6 +13,10 @@ header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     
+}
+body{
+   background-color:lightyellow;
+
 }
 
 
@@ -30,7 +34,6 @@ header{
 
 }
 .subcontainer{
-    background-color:lightyellow;
     width: 68%;
     display: flex;
     justify-content: space-around;
@@ -44,7 +47,6 @@ header{
 }
 .right{
     width: 29%;
-   background-color:lightyellow;
     border: rgb(244, 245, 176) 2px solid;
     border-radius: 26px;
     padding: 30px;
@@ -118,4 +120,19 @@ img{
 
 }
 
+}
+@media(max-width:500px){
+    table, td, th{
+padding :  15px 10px 15px 10px;
+    }
+}
+@media(max-width:416px){
+    table, td, th{
+padding :  15px 6px 15px 6px;
+    }
+}
+@media(max-width:374px){
+    table, td, th{
+padding :  15px 2px 15px 2px;
+    }
 }
