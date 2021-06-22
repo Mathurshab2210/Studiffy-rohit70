@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture</title>
+    <link rel="stylesheet" href="cse.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 3px 10px grey;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    
+}
+.container{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    /* padding: 40px; */
+    flex-wrap: wrap;
+    margin: auto;
+    /* margin-top: 0%; */
+    padding-top: 100px;
+
+    
+   
+}
+.box1 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.box-common{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0px 10px 8px  grey;
+    /* box-shadow: rgba(46, 4, 235, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgb(1 196 60 / 15%) 6px 6px 6.6px;
+    border-left: 4px solid blue;
+    border-bottom: 2px solid blue; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px; */
+    margin: 40px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.box-common:hover{
+    /* transform: scale(1.08); */
+    transform: scale(0.9);
+
+}
+.box-1content{
+    padding: 10px 0px 10px 20px ; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    /* color: black; */
+    /* background-color: black; */
+}
+.box-1content h2{
+    font-size: 21px;
+   
+}
+
+
+@media (max-width:1370px){
+        .container{
+            width: 100%;
+        }
+    }
+    
+
+@media (max-width:1230px) {
+        .box-common{
+            margin: 20px;
+        }
+@media (max-width:1105px) {
+       
+        .box1 img {
+            width: 245px;
+            height: 175px; 
+        } 
+    }
+    @media (max-width:860px) {
+       
+        .box1 img {
+            width: 220px;
+            height: 150px;
+            
+        }
+       
+        .box-1content h2{
+            font-size: 19px;
+           
+        }
+        
+    }
+    @media (max-width:786px) {
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 200px;
+        height: 140px;
+        
+    }
+    .box-1content h2{
+            font-size: 18px;
+            margin-top: -5px;
+            
+        }
+}
+    @media (max-width:691px) {
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 180px;
+        height: 125px;
+        
+    }
+    .box-1content h2{
+            font-size: 17px;
+            margin-top: -5px;
+            
+        }
+}
+    @media (max-width:633px) {
+        .container{
+            width: 90%;
+        }
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 200px;
+        height: 135px;
+        
+    }
+    .box-1content h2{
+            font-size: 19px;
+            margin-top: -5px;
+            
+        }
+}
+    @media (max-width:513px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 180px;
+        height: 125px;
+        
+    }
+    .box-1content h2{
+            font-size: 17px;
+            margin-top: -8px;
+            
+        }
+}
+    @media (max-width:445px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 10px;
+    }
+    
+    .box1 img {
+        width: 162px;
+        height: 110px;
+        
+    }
+    .box-1content h2{
+            font-size: 16px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+}
+    @media (max-width:385px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 10px;
+    }
+    .header h2{
+        font-size: 24px;
+    }
+    
+    .box1 img {
+        width: 140px;
+        height: 96px;
+        
+    }
+    .box-1content h2{
+            font-size: 14px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+}
+    @media (max-width:337px) {
+        .container{
+            width: 97%;
+        }
+    
+    .box-common{
+        margin: 8px;
+    }
+    
+    .box1 img {
+        width: 135px;
+        height: 90px;
+        
+    }
+   
+    .box-1content h2{
+            font-size: 14px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+}
+    
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2> B.Sc Agriculture</h2>
+    </header>
+    <div class="container">
+        <div class="box-common">
+            <div class="b1">
+                <div class="box1">
+                    <img src="https://t4.ftcdn.net/jpg/03/84/35/83/360_F_384358344_KKU3M71jRxWs0MWi9A6EOAWqw2D5bOWl.jpg" alt="ds">
+                </div>
+            
+            <div class="box-1content">
+                <a href="https://images.pexels.com/photos/7564257/pexels-photo-7564257.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></a>
+                    <h2>Agronomy</h2>
+                <!-- <h5>Agronomy</h5> -->
+                <!-- <h3>Agronomy</h3> -->
+            </div>
+        </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://media.istockphoto.com/photos/sprouts-growing-from-stacks-of-coins-and-bar-graph-concept-picture-id466467985?k=6&m=466467985&s=612x612&w=0&h=2BKbeRAkAjLqjuCV-cbZf-ql4WfaQ4PjdTIS4ek_-yA=" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Agricultural<br>Economics</h2>
+                <!-- <h5>Operating System</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://as2.ftcdn.net/v2/jpg/02/45/80/03/1000_F_245800336_3P6y9hlve9jenFmmo8VsTrQr6uLSnTLh.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Entomology</h2>
+                <!-- <h5>Mathematics-1</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://previews.123rf.com/images/dolgachov/dolgachov1503/dolgachov150301230/37681452-science-biology-ecology-research-and-people-concept-close-up-of-young-scientist-holding-petri-dish-w.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Soil Science</h2>
+                <!-- <h5>C Language</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://media-exp1.licdn.com/dms/image/C561BAQGB7zbcBLfv2Q/company-background_10000/0/1584546750319?e=2159024400&v=beta&t=VPhGZ5SJtFBjBbPaCwmaPxaQjkA-iKfyoIlRYzo_X1s" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Plants Breeding</h2>
+                <!-- <h5>Mathematics-2</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2020/07/INN2-E-Henten-4059-atl-image-1.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Agricultural <br>Engineering</h2>
+                <!-- <h5 id="oops">Object Oriented Programming</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/27SeptGenomicsFeature.jpg?itok=HIz67twZ" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Genetics</h2>
+                <!-- <h5>Mathematics-3</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://static.wixstatic.com/media/33599d_a36735fff02e4355898d30b8aae92146~mv2_d_4300_2314_s_2.jpg/v1/fill/w_420,h_318,al_c,q_80,usm_0.66_1.00_0.01/shutterstock_629191697%20(1).webp" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Water Engineering</h2>
+                <!-- <h5>Mathematics-3</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1570198198000/photosp/ba946e10-05f7-4c23-a531-842b248c7a03/stock-photo-farm-field-development-organic-agriculture-technology-care-innovation-agricultural-ba946e10-05f7-4c23-a531-842b248c7a03.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Organic Farming</h2>
+                <!-- <h5>Discreate Structure</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.sourcetrace.com/wp-content/themes/sts-v3/img/banner-farm-management.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Farm Management</h2>
+                <!-- <h5>Mathematics-3</h5> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

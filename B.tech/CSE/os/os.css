@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 3px 10px grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    
+}
+
+
+
+.container{
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    margin-top: 5px;
+    /* margin-left: 8px; 
+    margin-bottom: 8px;*/
+    margin-top: 7px;
+    
+    
+
+}
+.subcontainer{
+    background-color:lightyellow;
+    width: 68%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    border-radius: 25px;
+    padding: 31px;
+   
+   
+}
+.right{
+    width: 29%;
+   background-color:lightyellow;
+    border: rgb(244, 245, 176) 2px solid;
+    border-radius: 26px;
+    padding: 30px;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+.right p{
+    font-size: 18px;
+    word-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+td a:hover{
+    text-decoration: underline;
+}
+#side{
+    float: right;
+    width: min-content;
+    padding: 1em;
+}
+
+table,td,th{
+    text-align: center;
+    align-items: center;
+    border-collapse:collapse;
+    border:black 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    border-spacing: 5px;
+}
+img{
+    width: 420px;
+    height: 300px;
+    padding: auto;
+    margin: 6px;
+    
+}
+@media(max-width:1062px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .subcontainer{
+        width:100%;
+    }
+    .right{
+       display: none;
+    }
+    #side{
+        display: none;
+    }
+}
+@media(max-width:800px)
+{
+    #hide{
+        display: none;
+
+}
+
+}

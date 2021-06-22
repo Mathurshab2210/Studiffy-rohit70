@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA</title>
+    <link rel="stylesheet" href="bba.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 3px 10px grey;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    
+}
+.container{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    /* padding: 40px; */
+    flex-wrap: wrap;
+    margin: auto;
+    /* margin-top: 0%; */
+    padding-top: 100px;
+
+    
+   
+}
+.box1 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.box-common{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0px 10px 8px  grey;
+    /* box-shadow: rgba(46, 4, 235, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgb(1 196 60 / 15%) 6px 6px 6.6px;
+    border-left: 4px solid blue;
+    border-bottom: 2px solid blue; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px; */
+    margin: 40px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.box-common:hover{
+    /* transform: scale(1.08); */
+    transform: scale(0.9);
+
+}
+.box-1content{
+    padding: 10px 0px 10px 20px ; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    /* color: black; */
+    /* background-color: black; */
+}
+.box-1content h2{
+    font-size: 21px;
+    letter-spacing: 1px;
+    /* color: blueviolet; */
+}
+
+
+@media (max-width:1370px){
+        .container{
+            width: 100%;
+        }
+    }
+    
+    
+
+@media (max-width:1230px) {
+        .box-common{
+            margin: 20px;
+        }
+@media (max-width:1105px) {  
+       .box1 img {
+           width: 245px;
+           height: 175px; 
+       } 
+       header h2{
+           font-size: 3vw;
+       }
+   }
+   @media (max-width:860px) {
+       
+       .box1 img {
+           width: 220px;
+           height: 150px;
+           
+       }
+      
+       .box-1content h2{
+           font-size: 19px;
+          
+       }
+       
+   }
+   @media (max-width:786px) {
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 200px;
+        height: 140px;
+        
+    }
+    .box-1content h2{
+            font-size: 18px;
+            margin-top: -5px;
+            
+        }
+}
+header h2{
+           font-size: 3.9vw;
+       }
+#be{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:633px) {
+        .container{
+            width: 90%;
+        }
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 200px;
+        height: 135px;
+        
+    }
+    .box-1content h2{
+            font-size: 19px;
+            margin-top: -5px;
+            
+        }
+        header h2{
+           font-size: 4.4vw;
+       }
+}
+@media (max-width:513px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 15px;
+    }
+    
+    .box1 img {
+        width: 180px;
+        height: 125px;
+        
+    }
+    .box-1content h2{
+            font-size: 17px;
+            margin-top: -8px;
+            
+        }
+        header h2{
+           font-size: 4.8vw;
+       }
+}
+@media (max-width:445px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 10px;
+    }
+    
+    .box1 img {
+        width: 162px;
+        height: 110px;
+        
+    }
+    .box-1content h2{
+            font-size: 16px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+        header h2{
+           font-size: 4.8vw;
+           line-height: 35px;
+       }
+}
+@media (max-width:385px) {
+        .container{
+            width: 95%;
+        }
+    
+    .box-common{
+        margin: 10px;
+    }
+    .header h2{
+        font-size: 24px;
+    }
+    
+    .box1 img {
+        width: 140px;
+        height: 96px;
+        
+    }
+    .box-1content h2{
+            font-size: 13px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+        header h2{
+           font-size: 5.1vw;
+           line-height: 35px;
+       }
+}
+@media (max-width:337px) {
+        .container{
+            width: 97%;
+        }
+    
+    .box-common{
+        margin: 8px;
+    }
+    
+    .box1 img {
+        width: 135px;
+        height: 90px;
+        
+    }
+   
+    .box-1content h2{
+            font-size: 14px;
+            margin-top: -8px;
+            
+        }
+    .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Bachelor of Business Administration</h2>
+    </header>
+    <div class="container">
+        <div class="box-common">
+            <div class="b1">
+                <div class="box1">
+                   <a href="https://www.google.com" target="_blank"><img src="https://s7280.pcdn.co/wp-content/uploads/2018/08/Big_Data_That_Work_Smarter_Not_Harder-700x400.jpg.optimal.jpg" alt="ds"></a>
+                </div>
+            
+            <div class="box-1content">
+                <!-- <a href="https://images.pexels.com/photos/7564257/pexels-photo-7564257.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></a> -->
+                    <h2>Principles of <br>Management</h2>
+                <!-- <h5>Agronomy</h5> -->
+                <!-- <h3>Agronomy</h3> -->
+            </div>
+        </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.mathematik.tu-darmstadt.de/media/mathematik/forschung/responsive_bilder/TUVB3_CollageKlein_Mathe_Forschung_finish.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Business <br> Mathematics</h2>
+                <!-- <h5>Operating System</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://previews.123rf.com/images/maxkabakov/maxkabakov1310/maxkabakov131001380/22956978-marketing-concept-pixelated-words-marketing-management-on-digital-background-3d-render.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <!-- <br> -->
+                <h2>Marketing <br> Management</h2>
+                <!-- <h5>Mathematics-1</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.squareaccountants.uk/wp-content/uploads/2015/09/Financial-Life-Style-1024x640-730x370-1.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Financial & <br>Management <br> Accounting </h2>
+                <!-- <h5>C Language</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="http://www.aiscorp.com/app/uploads/2020/05/Lean_Material_Main_Image_700x485.png" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Production & <br> Material <br> Management</h2>
+                <!-- <h5>Mathematics-2</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://kashmirreporter.com/wp-content/uploads/2020/07/Stamp-duty-on-fresh-loans-waived-surcharge-on-fixed-charge-for-power-waived-amnesty-scheme-filing-of-GST-returns-extended.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2 id="be"> <span>Business</span> <span>Economics</span></h2>
+             
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://nibm.lk/wp-content/uploads/2019/12/shutterstock_675774691.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Introduction of <br> Operations <br> Research</h2>
+                <!-- <h5>Mathematics-3</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://www.loginworks.com/wp-content/uploads/2018/06/manufacturing.jpeg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <!-- <br> -->
+                <h2>Business Data <br> Processing</h2>
+                <!-- <h5>Mathematics-3</h5> -->
+            </div>
+        </div>
+        <div class="box-common">
+            <div class="box1">
+                <img src="https://innovationatwork.ieee.org/wp-content/uploads/2018/05/bigstock-213402223-1024x683.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Human Resources <br> Management</h2>
+                <!-- <h5>Discreate Structure</h5> -->
+            </div>
+        </div>
+        <!-- <div class="box-common">
+            <div class="box1">
+                <img src="https://www.sourcetrace.com/wp-content/themes/sts-v3/img/banner-farm-management.jpg" alt="ds">
+            </div>
+            <div class="box-1content">
+                <h2>Farm Management</h2> -->
+                <!-- <h5>Mathematics-3</h5> -->
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+</html>

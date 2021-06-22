@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+    <nav class="navbar background v-down-resp" id="nav">
+
+        <div class="firstpart">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41iomySvcmL.png" alt="logo">
+            <h1>Stud<span style="color: red">ify</span></h1>
+        </div>
+        
+        <ul class="secoundpart" id="secoundparta">
+            <li><a class="first" href="#Home">Home</a></li>
+            <li><a class="first" href="#Videos">Videos</a></li>
+            <li><a class="first" href="#Practice">Practice</a></li>
+            <li><a class="first" href="#More" id="more">More<span style="color: #ff1616;">&#9660;</span></a>
+                <ul class="submenu1" id="*submenu1">
+                    <li><a href="#Fun">Fun</a></li>
+                    <li><a href="#Motivation">Motivation</a></li>
+                    <li><a href="books/lib.html">E-Library</a></li>
+                    <li><a href="#Games">Games</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="thirdpart">
+            <div>
+                <!-- <input type="text" name="search" autocomplete="off">
+                <button class="search">search</button> -->
+                <img src="facebook.png" alt="facebook icon">
+                <img src="instagram.png" alt="instagram icon">
+                <img src="twitter.png" alt="instagram icon">
+                <img src="linkedin.png" alt="instagram icon">
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+    </nav>
+
+
+    <!-- for scroll bar -->
+    <div class="progressbar"></div>
+
+    <script>
+
+
+        var burger = document.querySelector(".burger");
+var secoundpart = document.querySelector(".secoundpart")
+var navbar = document.querySelector(".navbar");
+burger.addEventListener("click" , function(){
+    secoundpart.classList.toggle("secoundpart-active");
+    // secoundpart.classList.toggle("v-resp");
+    // secoundpart.classList.toggle("v-down-resp")
+    
+
+});
+
+let progressbar = document.querySelector(".progressbar");
+window.addEventListener("scroll" , function(){
+
+
+   scrollpageheight = document.documentElement.scrollHeight - this.window.innerHeight;
+//    console.log(scrollheight);
+    let scrollheight = window.scrollY;
+    // console.log(heigh);
+    let final = scrollheight/(scrollpageheight/100);
+   
+    progressbar.style.width = final + "%";
+});
+
+    </script>
+
+
+</body>
+</html>

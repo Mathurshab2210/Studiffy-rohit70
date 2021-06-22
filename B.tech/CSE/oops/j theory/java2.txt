@@ -1,0 +1,99 @@
+Example: GCD of Two Numbers using Recursion
+public class GCD {
+
+    public static void main(String[] args) {
+        int n1 = 366, n2 = 60;
+        int hcf = hcf(n1, n2);
+
+        System.out.printf("G.C.D of %d and %d is %d.", n1, n2, hcf);
+    }
+
+    public static int hcf(int n1, int n2)
+    {
+        if (n2 != 0)
+            return hcf(n2, n1 % n2);
+        else
+            return n1;
+    }
+}
+.
+.
+Example : Binary to Decimal Conversion Using Custom Method
+class Main {
+    
+  public static void main(String[] args) {
+
+    // binary number
+    long num = 110110111;
+
+    // call method by passing the binary number
+    int decimal = convertBinaryToDecimal(num);
+
+    System.out.println("Binary to Decimal");
+    System.out.println(num + " = " + decimal);
+  }
+
+  public static int convertBinaryToDecimal(long num) {
+    int decimalNumber = 0, i = 0;
+    long remainder;
+    
+    while (num != 0) {
+      remainder = num % 10;
+      num /= 10;
+      decimalNumber += remainder * Math.pow(2, i);
+      ++i;
+    }
+    
+    return decimalNumber;
+  }
+}
+.
+.
+Example : Binary to Decimal Conversion Using parseInt()
+class Main {
+  public static void main(String[] args) {
+    
+    // binary number
+    String binary = "01011011";
+    
+    // convert to decimal
+    int decimal = Integer.parseInt(binary, 2);
+    System.out.println(binary + " in binary = " + decimal + " in decimal.");
+  }
+}
+.
+.
+Example : Decimal to Binary Conversion using Custom Method
+class Main {
+
+  public static void main(String[] args) {
+
+    // decimal number
+    int num = 19;
+    System.out.println("Decimal to Binary");
+
+    // call method to convert to binary
+    long binary = convertDecimalToBinary(num);
+
+    System.out.println("\n" + num + " = " + binary);
+    }
+
+  public static long convertDecimalToBinary(int n) {
+
+    long binaryNumber = 0;
+    int remainder, i = 1, step = 1;
+
+    while (n!=0) {
+      remainder = n % 2;
+        System.out.println("Step " + step++ + ": " + n + "/2");
+
+        System.out.println("Quotient = " + n/2 + ", Remainder = " + remainder);
+        n /= 2;
+
+        binaryNumber += remainder * i;
+        i *= 10;
+    }
+    
+    return binaryNumber;
+    }
+}
