@@ -15,7 +15,10 @@ header{
     
 }
 
+body{
+   background-color:lightyellow;
 
+}
 
 .container{
     width: 100%;
@@ -24,12 +27,9 @@ header{
     margin-top: 5px;
     /* margin-left: 8px; 
     margin-bottom: 8px;*/
-    
-    
 
 }
 .subcontainer{
-    background-color:lightyellow;
     width: 68%;
     display: flex;
     justify-content: space-around;
@@ -43,7 +43,6 @@ header{
 }
 .right{
     width: 29%;
-   background-color:lightyellow;
     border: rgb(244, 245, 176) 2px solid;
     border-radius: 26px;
     padding: 30px;
