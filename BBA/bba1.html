@@ -26,6 +26,10 @@ header{
     background-color: white;
     
 }
+.special{
+    display: flex;
+    flex-direction: column;
+}
 .container{
     width: 90%;
     /* background-color: red; */
@@ -72,8 +76,12 @@ header{
 }
 .box-1content h2{
     font-size: 21px;
-    letter-spacing: 1px;
+    color: black;
+    /* letter-spacing: 1px; */
     /* color: blueviolet; */
+}
+.box-1content a{
+    text-decoration: none;
 }
 
 
@@ -89,13 +97,17 @@ header{
         .box-common{
             margin: 20px;
         }
-@media (max-width:1105px) {  
+@media (max-width:1116px) {  
        .box1 img {
            width: 245px;
            height: 175px; 
        } 
        header h2{
            font-size: 3vw;
+       }
+       .box-1content h2{
+           font-size: 18px;
+          
        }
    }
    @media (max-width:860px) {
@@ -107,7 +119,7 @@ header{
        }
       
        .box-1content h2{
-           font-size: 19px;
+           font-size: 16px;
           
        }
        
@@ -124,10 +136,14 @@ header{
         
     }
     .box-1content h2{
-            font-size: 18px;
+            font-size: 16px;
             margin-top: -5px;
             
         }
+    #business{
+        display: flex;
+        flex-direction: column;
+    }
 }
 header h2{
            font-size: 3.9vw;
@@ -136,7 +152,17 @@ header h2{
     display: flex;
     flex-direction: column;
 }
-@media (max-width:633px) {
+@media (max-width:690px){
+    .box1 img {
+        width: 230px;
+        height: 165px;
+        
+    }
+    .container{
+            width: 90%;
+        }
+}
+@media (max-width:584px) {
         .container{
             width: 90%;
         }
@@ -151,7 +177,7 @@ header h2{
         
     }
     .box-1content h2{
-            font-size: 19px;
+            font-size: 17px;
             margin-top: -5px;
             
         }
@@ -174,13 +200,24 @@ header h2{
         
     }
     .box-1content h2{
-            font-size: 17px;
+            font-size: 16px;
             margin-top: -8px;
             
         }
         header h2{
            font-size: 4.8vw;
        }
+       .break{
+           display: flex;
+           flex-direction: column;
+       }
+       .box-1content {
+            padding: 9px 0px 10px 11px;
+        }
+        #ppo{
+            display: flex;
+            flex-direction: column;
+        }
 }
 @media (max-width:445px) {
         .container{
@@ -272,98 +309,142 @@ header h2{
     <div class="container">
         <div class="box-common">
             <div class="b1">
+            <a href="bba subject/Buisness comm/bcomu.html">
                 <div class="box1">
-                   <a href="https://www.google.com" target="_blank"><img src="https://s7280.pcdn.co/wp-content/uploads/2018/08/Big_Data_That_Work_Smarter_Not_Harder-700x400.jpg.optimal.jpg" alt="ds"></a>
+                   <img src="bba image/business communication.jpg" alt="ds"></a>
                 </div>
+            </a>
+
+            <div class="box-1content">
+            <a href="bba subject/Buisness comm/bcomu.html">
+                
+                    <h2 id="business"><span>Business</span> <span>Communication</span> </h2>
+            </a>
+                
+            </div>
+       
+        </div>
+        </div>
+        <div class="box-common">
+        <a href="bba subject/Financial-accountingh/fa.html">
+            <div class="box1">
+                <img src="bba image/financial accounting.jpg" alt="ds">
+            </div>
+            </a>
+            <div class="box-1content">
+        <a href="bba subject/Financial-accountingh/fa.html">
+                <h2 class="break"> <span>Financial</span> <span>Accounting</span> </h2>
+            </a>
+            </div>
+        </div>
+        <div class="box-common">
+            <a href="bba subject/PPM/PPM.html">
+            <div class="box1">
+                <img src="bba image/ppo.jpg" alt="ds">
+            </div>
+            </a>
+            <div class="box-1content">
+                <a href="bba subject/PPM/PPM.html">
+                <h2 class="special"> <span id="ppo"> <span>Principles &</span> <span>Practices</span> </span> <span>of Management</span> </h2>
+               </a>
+            </div>
+        </div>
+        <div class="box-common">
+            <a href="bba subject/Mos/mos.html">
+            <div class="box1">
+                <img src="bba image/mos.jpg" alt="ds">
+            </div>
+            </a>
+            <div class="box-1content">
+                <a href="bba subject/Mos/mos.html">
+              <h2 class="break"><span>Marketing Of</span> <span>Services</span> </h2>
+              </a>
+            </div>
+        </div>
+        <div class="box-common">
+            <a href="bba subject/Economics/eco.html">
+            <div class="box1">
+                <img src="bba image/economics.png" alt="ds">
+            </div>
+            </a>
+            <div class="box-1content">
+                <a href="bba subject/Economics/eco.html">
+               <h2>Economics</h2>
+               </a>
+            </div>
+        </div>
+        <div class="box-common">
+            <a href="../homepageimage/comming soon.html">
+            <div class="box1">
+                <img src="bba image/cab.jpg" alt="ds">
+            </div>
+        </a>
+           
+            <div class="box-1content">
+        <a href="../homepageimage/comming soon.html">
+               
+                <h2 id="be"> CAB </h2>
+               </a>
+            </div>
+        </div>
+        <div class="box-common">
+        <a href="../homepageimage/comming soon.html">
             
-            <div class="box-1content">
-                <!-- <a href="https://images.pexels.com/photos/7564257/pexels-photo-7564257.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></a> -->
-                    <h2>Principles of <br>Management</h2>
-                <!-- <h5>Agronomy</h5> -->
-                <!-- <h3>Agronomy</h3> -->
-            </div>
-        </div>
-        </div>
-        <div class="box-common">
             <div class="box1">
-                <img src="https://www.mathematik.tu-darmstadt.de/media/mathematik/forschung/responsive_bilder/TUVB3_CollageKlein_Mathe_Forschung_finish.jpg" alt="ds">
+                <img src="bba image/introduction.jpg" alt="ds">
             </div>
+        </a>
             <div class="box-1content">
-                <h2>Business <br> Mathematics</h2>
-                <!-- <h5>Operating System</h5> -->
-            </div>
-        </div>
-        <div class="box-common">
-            <div class="box1">
-                <img src="https://previews.123rf.com/images/maxkabakov/maxkabakov1310/maxkabakov131001380/22956978-marketing-concept-pixelated-words-marketing-management-on-digital-background-3d-render.jpg" alt="ds">
-            </div>
-            <div class="box-1content">
-                <!-- <br> -->
-                <h2>Marketing <br> Management</h2>
-                <!-- <h5>Mathematics-1</h5> -->
-            </div>
-        </div>
-        <div class="box-common">
-            <div class="box1">
-                <img src="https://www.squareaccountants.uk/wp-content/uploads/2015/09/Financial-Life-Style-1024x640-730x370-1.jpg" alt="ds">
-            </div>
-            <div class="box-1content">
-                <h2>Financial & <br>Management <br> Accounting </h2>
-                <!-- <h5>C Language</h5> -->
-            </div>
-        </div>
-        <div class="box-common">
-            <div class="box1">
-                <img src="http://www.aiscorp.com/app/uploads/2020/05/Lean_Material_Main_Image_700x485.png" alt="ds">
-            </div>
-            <div class="box-1content">
-                <h2>Production & <br> Material <br> Management</h2>
-                <!-- <h5>Mathematics-2</h5> -->
-            </div>
-        </div>
-        <div class="box-common">
-            <div class="box1">
-                <img src="https://kashmirreporter.com/wp-content/uploads/2020/07/Stamp-duty-on-fresh-loans-waived-surcharge-on-fixed-charge-for-power-waived-amnesty-scheme-filing-of-GST-returns-extended.jpg" alt="ds">
-            </div>
-            <div class="box-1content">
-                <h2 id="be"> <span>Business</span> <span>Economics</span></h2>
-             
-            </div>
-        </div>
-        <div class="box-common">
-            <div class="box1">
-                <img src="https://nibm.lk/wp-content/uploads/2019/12/shutterstock_675774691.jpg" alt="ds">
-            </div>
-            <div class="box-1content">
+        <a href="../homepageimage/comming soon.html">
+
                 <h2>Introduction of <br> Operations <br> Research</h2>
+                </a>
                 <!-- <h5>Mathematics-3</h5> -->
             </div>
         </div>
         <div class="box-common">
+            <a href="../homepageimage/comming soon.html">
+
             <div class="box1">
-                <img src="https://www.loginworks.com/wp-content/uploads/2018/06/manufacturing.jpeg" alt="ds">
+                <img src="bba image/business processing.jpeg" alt="ds">
             </div>
+            </a>
             <div class="box-1content">
                 <!-- <br> -->
+        <a href="../homepageimage/comming soon.html">
+
                 <h2>Business Data <br> Processing</h2>
+        </a>
                 <!-- <h5>Mathematics-3</h5> -->
             </div>
         </div>
         <div class="box-common">
+            <a href="../homepageimage/comming soon.html">
+
             <div class="box1">
-                <img src="https://innovationatwork.ieee.org/wp-content/uploads/2018/05/bigstock-213402223-1024x683.jpg" alt="ds">
+                <img src="bba image/human resources.jpg" alt="ds">
             </div>
+            </a>
             <div class="box-1content">
+        <a href="../homepageimage/comming soon.html">
+
                 <h2>Human Resources <br> Management</h2>
+                </a>
                 <!-- <h5>Discreate Structure</h5> -->
             </div>
         </div>
         <!-- <div class="box-common">
+            <a href="../homepageimage/comming soon.html">
+
             <div class="box1">
-                <img src="https://www.sourcetrace.com/wp-content/themes/sts-v3/img/banner-farm-management.jpg" alt="ds">
+                <img src="bba image/farm manage.jpg" alt="ds">
             </div>
+            </a>
             <div class="box-1content">
+        <a href="../homepageimage/comming soon.html">
+
                 <h2>Farm Management</h2> -->
+                </a>
                 <!-- <h5>Mathematics-3</h5> -->
             <!-- </div> -->
         </div>
