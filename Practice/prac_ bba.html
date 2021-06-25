@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question_BBA</title>
+
+    <link rel="stylesheet" href="../Nav/nav.css">
     <link rel="stylesheet" href="prac_ bba.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="nav1.css"> 
-     <link rel="stylesheet" href="nav1res.css">
 
 
 </head>
@@ -18,68 +23,71 @@
     
     <!-- ------------------------------------------- NAVIGATION BAR START----------------------------------------------- -->
 
-    <nav class="navbar background v-down-resp" id="nav">
+    <!-- For Navigation Bar -->
+  <nav class="navbar background v-down-resp" id="nav">
 
-        <div class="firstpart">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/41iomySvcmL.png" alt="logo">
-            <h1>Stud<span style="color: rgb(39, 182, 39)">ify</span></h1>
-        </div>
-
-        <ul class="secoundpart" id="secoundparta">
-            <li class="secondpart-a"><a href="#Home" class="secondpart-a">Home</a></li>
-            <li class="secondpart-a"><a href="#Videos" class="secondpart-a">Videos</a></li>
-            <li class="secondpart-a"><a href="#Practice" class="secondpart-a">Practice</a></li>
-            <li class="secondpart-a"><a href="#More" class="secondpart-a">More<span
-                        style="color: rgb(241, 44, 44);">&#9660;</span></a>
-                <ul class="submenu1">
-                    <li><a href="#fun">fun</a></li>
-                    <li><a href="#motivation">Motivation</a></li>
-                    <li><a href="Library.html" href="library.css class=">E-Library</a></li>
-                    <li><a href="#Games">Games</a></li>
-
+    <div class="firstpart">
+        <img src="../homepageimage/logo2.png" alt="logo">
+        <h1>Stud<span style="color: red">ify</span></h1>
+    </div>
+    
+    <ul class="secoundpart" id="secoundparta">
+        <li class="first1"><a class="first" href="../index.html">Home</a></li>
+        <li class="first1"><a class="first" href="#Videos">Videos</a></li>
+        <li class="first1"><a class="first" href="#Practice" id="practice">Practice<span style="color: grey; " >&#9660;</span></a>
+            <ul class="submenu0" id="submenu-0">
+                <li><a href="practice_engg.html">B.tech</a></li>
+                <li><a href="prac_ bba.html">BBA</a></li>
+                <li><a href="E-library/E-library files/lib.html">B.sc Agri</a></li>
+                <li><a href="#Games">B.com</a></li>
                 </ul>
-            </li>
-        </ul>
+        </li>
+        <li class="first1"><a class="first" href="#More" id="more">More<span style="color: grey;">&#9660;</span></a>
+            <ul class="submenu1" id="submenu11">
+                <li><a href="../fun/index.html">Fun</a></li>
+                <li><a href="#Motivation">Motivation</a></li>
+                <li><a href="../E-library/E-library files/lib.html">E-Library</a></li>
+                <li><a href="#Games">Games</a></li>
+                <li id="contact">
+           <a href="../contact/contact.html"> <button class="search" style="cursor: pointer;">Contact Us</button></a>
 
-        <div class="thirdpart">
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
 
-            <input type="text" name="search" autocomplete="off">
-            <button class="search">search</button>
-
+    <div class="thirdpart">
+        <div>
+            
+           <a href="../contact/contact.html"> <button class="search" style="cursor: pointer;">Contact Us</button></a>
         </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
+    </div>
+
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+</nav>
 
 
     <!-- ------------------------------------------- NAVIGATION BAR END----------------------------------------------- -->
 
 
 
-    <script>
-        var burger = document.querySelector(".burger");
-        var secoundpart = document.querySelector(".secoundpart")
-        var navbar = document.querySelector(".navbar");
-        burger.addEventListener("click", function () {
-            secoundpart.classList.toggle("secoundpart-active");
-            // secoundpart.classList.toggle("v-resp");
-            // secoundpart.classList.toggle("v-down-resp")
+  
 
-
-        });
-    </script>
-
-    <header class="nav">  
+    
+<header class="heading">  
       
-        <h1>Bachelor of Business Administration</h1>
-        
-    </header>
-       
+    <h2>Bachelor of Business Administration</h2>
+    
+</header>
             
             <section class="container">
+               
     
             <div class="subcontainer">
                 
@@ -133,7 +141,7 @@
                                 <td><a href="bba505.pdf">Download</a></td></tr>
                            
                 </table>
-                <div class="img"><img src="undraw_Business_decisions_re_84ag.svg" alt=""></div>
+                <!-- <div class="img"><img src="undraw_Business_decisions_re_84ag.svg" alt=""></div> -->
             
             </div>
             <div class="right">
@@ -142,8 +150,95 @@
                    <span> BBA is a three-year professional undergraduate course in Business Management. It is open to students from all the three streams: Science, Arts and Commerce. The BBA course offers knowledge and training in management and leadership skills to prepare them for managerial roles and entrepreneurship. There are about 4600 BBA colleges in India. Students who wish to land in the field of management can pursue the BBA course after completing Class 12. The course will help the students learn various aspects of business administration and management through classroom lectures and practical projects like internships. The course will acquaint the students with various aspects of the business administration, market, marketing trends, etc.</span></p>
             </div>
             </section>
+
+
+                         <!-- this is for footer -->
+     <footer class="foot">
+        <div class="fotterpart1">
+
+            <div class="footer-a">
+                <h1>Stud<span style="color: red">ify</span></h1>
+                <p>Focus on practical skills <br>
+                    Learn.Think.Code.</p>
+            </div>
+
+            <div class="footer-b-container">
+
+                <div class="footer-b">
+                    <ul>
+                        <p>CATOGORIES</p>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">E-Library</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Practice</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-c">
+                    <ul>
+                        <p>COURSES</p>
+                        <li><a href="#">B.Tech</a></li>
+                        <li><a href="#">BBA</a></li>
+                        <li><a href="#">B.Sc(Agri)</a></li>
+                        <li><a href="#">B.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerpart2">
+
+            <div class="footerl1"></div>
+            <p>CONNECT <span class="with">with</span> US</p>
+            <div class="footerl1"></div>
+
+            
+            <img src="../homepageimage/facebook.png" alt="facebook icon" style="cursor: pointer;">
+            <img src="../homepageimage/instagram.png" alt="instagram icon" style="cursor: pointer;">
+            <img src="../homepageimage/twitter.png" alt="twitter icon" style="cursor: pointer;">
+            <img src="../homepageimage/linkedin.png" alt="linkedin icon" style="cursor: pointer;">
+            <div class="footerl1"></div>
+        </div>
+        <div class="footerpart3">
+            <p>@ 2022 Studify - All Right Reserved</p>
+        </div>
+    </footer>
             
             
+
+    <script>
+        var burger = document.querySelector(".burger");
+        var secoundpart = document.querySelector(".secoundpart")
+        var navbar = document.querySelector(".navbar");
+        burger.addEventListener("click", function () {
+            secoundpart.classList.toggle("secoundpart-active");
+            // secoundpart.classList.toggle("v-resp");
+            // secoundpart.classList.toggle("v-down-resp")
+
+
+        });
+
+
+        
+
+document.getElementById("more").addEventListener("click" , function(){
+    
+    if(document.getElementById("submenu11").style.display == "flex"){
+        document.getElementById("submenu11").style.display = "none";
+    }
+    else
+        document.getElementById("submenu11").style.display = "flex"
+});
+document.getElementById("practice").addEventListener("click" , function(){
+
+    if(document.getElementById("submenu-0").style.display == "flex"){
+        document.getElementById("submenu-0").style.display = "none";
+    }
+    else
+        document.getElementById("submenu-0").style.display = "flex"
+});
+    </script>
             
    </body>         
 </html>

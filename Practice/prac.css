@@ -2,60 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
+body{
+    /* background-color: yellow; */
+    background-color:rgb(190, 190, 214);
+
+    overflow-x: hidden;
+
+
+}
+a:hover{
+    text-decoration: underline;
+}
+
 
 .container{
     width: 100%;
-    background-color:whitesmoke;
+    background-color:rgb(190, 190, 214);
     display: flex;
-    margin-top: 58px;
-    /* margin-left: 8px; 
-    margin-bottom: 8px;*/
-    
+    margin-top: 90px;
+    justify-content: space-around;
+    padding: 10px;
     
 
 }
-.subcontainer{
-    background-color:lightyellow;
-    width:33%;
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    border-radius: 25px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 6px;
-   
-}
-.next{
-    text-align: center;
-    background-color:lightyellow;
-    width:33%;
-    /* display: flex;
-    justify-content: space-around; */
-    /* align-items: center; */
-    flex-wrap: wrap;
-    border-radius: 25px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 6px;
-   
-}
-.right{
-    background-color:lightyellow;
-    width:34%;
-    /* display: flex;
-    justify-content: space-around; */
-    /* align-items: center; */
-    flex-wrap: wrap;
-    border-radius: 25px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 6px;
-   
-}
+
 .right p{
     font-size: 18px;
     word-spacing: 3px;
@@ -83,27 +54,20 @@ table,td,th{
     border-spacing: 5px;
     margin: auto;
 }
-@media(max-width:894px){
+@media(max-width:1150px){
     .container{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        align-items: stretch;
+        
+        /* justify-content: space-around; */
     }
     
-    .next{
-        width: 100%;
-        align-items: center;
-    }
     .right{
-        width: 100%;
-        align-content: center;
+        margin-top: 50px;
     }
-    .subcontainer{
-        width: 100%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    .next{
+        margin-top: 50px;
     }
     h2{
         text-align: center;
