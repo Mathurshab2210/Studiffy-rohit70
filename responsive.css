@@ -24,11 +24,10 @@
 }
 .submenu1{
     background-color: #1b2a30;
-    position: absolute;
-    top: 265px;
-    left: 0px;
+    position: initial;
+    
     z-index: 90;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     width: 100%;
     padding-bottom: 0px;
@@ -36,11 +35,38 @@
     align-items: flex-start;
     display: none;
 }
+.submenu0{
+    background-color: #1b2a30;
+    position: initial;
+    
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+}
+.submenu1 li{
+    margin: 0px;
+}
+.submenu0 li{
+    margin: 0px;
+}
     
     .submenu1 li a{
-        padding: 0px;
+        padding: 8px 54px 8px 74px;
         /* color: rgb(233, 230, 230); */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: flex-start;
+    }
+    .submenu0 li a{
+        padding: 8px 54px 8px 74px;
+        /* color: rgb(233, 230, 230); */
+        font-size: 22px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: flex-start;
     }
 
     .section3heading p{
@@ -153,7 +179,7 @@
     .section1{
         width: 65%;
     }
-   
+  
 
    
  
@@ -247,19 +273,7 @@
 }
 
 @media (max-width:550px){
-    .submenu1 {
-        background-color: #1b2a30;
-        position: absolute;
-        top: 265px;
-        left: 0px;
-        z-index: 90;
-        /* display: flex; */
-        flex-direction: column;
-        width: 100%;
-        padding-bottom: 0px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+ 
     
     .foot{
         /* background-color: pink; */
@@ -535,20 +549,7 @@
         font-size: 13px;
         /* background-color: red; */
     }
-    .submenu1{
-        background-color: #1b2a30;
-        position: absolute;
-        top: 264px;
-        left: 0px;
-        z-index: 90;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-bottom: 0px;
-        justify-content: flex-start;
-        align-items: center;
-        display: none;
-    }
+
         
    
  }
