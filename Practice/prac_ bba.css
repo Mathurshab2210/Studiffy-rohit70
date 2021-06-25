@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    text-decoration: underline solid lightblue;
+    background-color: azure;
+}
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: beige;
+    margin: 6px;
+    padding: 5px;
+    width: 100vw;
+}
+.subcontainer{
+      width: 68%;
+      align-items: center;
+       margin-left: 100px; 
+      
+      
+} */
+.container{
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 8px; 
+    margin-bottom: 8px;*/
+    
+    
+
+}
+.subcontainer{
+    background-color:#FFFAFA;
+    width: 68%;
+     display: flex; 
+     flex-direction: row;
+     justify-content: space-around; 
+    /* align-items: center; */
+    flex-wrap: wrap;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 6px;
+   
+}
+.right{
+    width: 29%;
+   background-color:#FFFAFA;
+    border: rgb(244, 245, 176) 2px solid;
+    border-radius: 26px;
+    padding: 30px;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+.right p{
+    font-size: 18px;
+    word-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+h2{
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+table,td,th{
+    text-align: center;
+    align-items: center;
+    border-collapse:collapse;
+    border:black 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    border-spacing: 5px;
+}
+.img{
+    width: 225px;
+    padding: 1em;
+
+}
+@media(max-width:1001px){
+    .right span{
+        display: none;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 95%;
+        font-size: medium;
+    }
+    .right h2{
+        text-decoration: underline solid whitesmoke;
+    }
+    .subcontainer{
+        width: 95%;
+    }
+
+}
+@media (max-width:600px) {
+    .img{
+        display: none;
+    }
+    
+}
