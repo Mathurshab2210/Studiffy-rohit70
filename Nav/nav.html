@@ -5,48 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <nav class="navbar background v-down-resp" id="nav">
+  <!-- For Navigation Bar -->
+  <nav class="navbar background v-down-resp" id="nav">
 
-        <div class="firstpart">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/41iomySvcmL.png" alt="logo">
-            <h1>Stud<span style="color: red">ify</span></h1>
-        </div>
-        
-        <ul class="secoundpart" id="secoundparta">
-            <li><a class="first" href="#Home">Home</a></li>
-            <li><a class="first" href="#Videos">Videos</a></li>
-            <li><a class="first" href="#Practice">Practice</a></li>
-            <li><a class="first" href="#More" id="more">More<span style="color: #ff1616;">&#9660;</span></a>
-                <ul class="submenu1" id="*submenu1">
-                    <li><a href="#Fun">Fun</a></li>
-                    <li><a href="#Motivation">Motivation</a></li>
-                    <li><a href="books/lib.html">E-Library</a></li>
-                    <li><a href="#Games">Games</a></li>
+    <div class="firstpart">
+        <img src="../homepageimage/logo2.png" alt="logo">
+        <h1>Stud<span style="color: red">ify</span></h1>
+    </div>
+    
+    <ul class="secoundpart" id="secoundparta">
+        <li class="first1"><a class="first" href="#Home">Home</a></li>
+        <li class="first1"><a class="first" href="#Videos">Videos</a></li>
+        <li class="first1"><a class="first" href="#Practice" id="practice">Practice<span style="color: grey; " >&#9660;</span></a>
+            <ul class="submenu0" id="submenu-0">
+                <li><a href="#B.tech">B.tech</a></li>
+                <li><a href="#Motivation">BBA</a></li>
+                <li><a href="E-library/E-library files/lib.html">B.sc Agri</a></li>
+                <li><a href="#Games">B.com</a></li>
                 </ul>
-            </li>
-        </ul>
+        </li>
+        <li class="first1"><a class="first" href="#More" id="more">More<span style="color: grey;">&#9660;</span></a>
+            <ul class="submenu1" id="submenu11">
+                <li><a href="#Fun">Fun</a></li>
+                <li><a href="#Motivation">Motivation</a></li>
+                <li><a href="E-library/E-library files/lib.html">E-Library</a></li>
+                <li><a href="#Games">Games</a></li>
+                <li id="contact">
+           <a href="contact/contact.html"> <button class="search" style="cursor: pointer;">Contact Us</button></a>
 
-        <div class="thirdpart">
-            <div>
-                <!-- <input type="text" name="search" autocomplete="off">
-                <button class="search">search</button> -->
-                <img src="facebook.png" alt="facebook icon">
-                <img src="instagram.png" alt="instagram icon">
-                <img src="twitter.png" alt="instagram icon">
-                <img src="linkedin.png" alt="instagram icon">
-            </div>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
+
+    <div class="thirdpart">
+        <div>
+            
+           <a href="contact/contact.html"> <button class="search" style="cursor: pointer;">Contact Us</button></a>
         </div>
+    </div>
 
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 
-    </nav>
+</nav>
 
 
     <!-- for scroll bar -->
@@ -77,6 +86,25 @@ window.addEventListener("scroll" , function(){
     let final = scrollheight/(scrollpageheight/100);
    
     progressbar.style.width = final + "%";
+});
+
+
+
+document.getElementById("more").addEventListener("click" , function(){
+    
+    if(document.getElementById("submenu11").style.display == "flex"){
+        document.getElementById("submenu11").style.display = "none";
+    }
+    else
+        document.getElementById("submenu11").style.display = "flex"
+});
+document.getElementById("practice").addEventListener("click" , function(){
+
+    if(document.getElementById("submenu-0").style.display == "flex"){
+        document.getElementById("submenu-0").style.display = "none";
+    }
+    else
+        document.getElementById("submenu-0").style.display = "flex"
 });
 
     </script>
