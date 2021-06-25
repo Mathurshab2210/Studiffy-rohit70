@@ -88,3 +88,11 @@ document.getElementById("more").addEventListener("click" , function(){
         else
             document.getElementById("submenu11").style.display = "flex"
 });
+document.getElementById("practice").addEventListener("click" , function(){
+    
+        if(document.getElementById("submenu-0").style.display == "flex"){
+            document.getElementById("submenu-0").style.display = "none";
+        }
+        else
+            document.getElementById("submenu-0").style.display = "flex"
+});
