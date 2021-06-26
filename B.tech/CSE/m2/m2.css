@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(179, 229, 241);
+    align-items: center;
+    border:solid 6px lightskyblue;
+    border-radius: 25px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.nav h1{
+    font-size: 45px;
+    font-family: cursive;
+    text-shadow: 3px 2px 3px whitesmoke;
+    text-decoration: thistle underline;
+}
+.nav img{
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    padding: 5px;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 16%, 100% 78%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
+
+}
+.container{
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    
+    
+
+}
+.subcontainer{
+    background-color: lightcyan;
+    width: 68%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    border: 2px solid black;
+    flex-wrap: wrap;
+    border:rgb(144, 214, 231) 4px double;
+    border-radius: 44px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+    
+
+    /* background-color: blue; */
+}
+.subcontainer div{
+    width: 192px;
+    height: 190px;
+    background-color: rgb(71, 198, 214);
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border:lightskyblue solid 5px;
+    border-radius: 50px;
+}
+.subcontainer div p{
+    font-size: 19px;
+    font-family: cursive;
+    text-align: justify;
+    align-items: center;
+    padding: 18px;
+}
+.subcontainer div:hover{
+    box-shadow: 4px 9px 8px rgb(196, 151, 151) ;
+    border-radius: 69px;
+    border: rgb(20, 165, 223) solid 4px;
+    background-color: rgb(142, 223, 209);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.right{
+    width: 29%;
+   background-color: rgb(200, 243, 241);
+    border: rgb(86, 156, 199) 5px solid;
+    border-radius: 46px;
+    padding: 30px;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+.right p{
+    font-size: 19px;
+    word-spacing: 4px;
+    font-family: 'Pattaya', sans-serif;
+   
+}
+.right:hover{
+     box-shadow: 10px 7px 9px lightseagreen;
+    background-color:lightyellow;
+    font-weight: bold;
+}
+
+#move{
+    font-family: fantasy;
+    font-size: 25px;
+    font-style: italic;
+    color:lightseagreen ;
+   /* font-weight: bolder;*/
+    text-shadow: 3px 4px 3px lime;
+}
+
+h3{
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 5px 6px 6px ;
+    font-weight: bolder;
+    font-size: 25px;
+}
+@media only screen and (orientation:landscape){
+    .lock{ display:none; }
+    .container{ display:flex; }
+  }
+  @media only screen and (orientation:portrait){
+    .lock{ display:block; }
+    .container{ display:none; }
+  }

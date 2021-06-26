@@ -83,7 +83,7 @@ td a:hover{
 }
 
 table,td,th{
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     border-collapse:collapse;
     border:black 2px solid;
@@ -121,7 +121,7 @@ img{
 }
 
 }
-@media(max-width:500px){
+/* @media(max-width:500px){
     table, td, th{
 padding :  15px 10px 15px 10px;
     }
@@ -135,4 +135,4 @@ padding :  15px 6px 15px 6px;
     table, td, th{
 padding :  15px 2px 15px 2px;
     }
-}
+} */

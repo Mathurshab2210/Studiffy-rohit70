@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    box-shadow: 0px 3px 10px grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    width: 100%;
+    height: 70px;
+    
+}
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: beige;
+    margin: 6px;
+    padding: 5px;
+    width: 100vw;
+}
+.subcontainer{
+      width: 68%;
+      align-items: center;
+       margin-left: 100px; 
+      
+      
+} */
+
+.container{
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    /* margin-left: 8px; 
+    margin-bottom: 8px;*/
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    
+    
+
+}
+.subcontainer{
+    background-color:azure;
+    width: 68%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 6px;
+   
+}
+.right{
+    width: 29%;
+   background-color:azure;
+    border: rgb(244, 245, 176) 2px solid;
+    border-radius: 26px;
+    padding: 30px;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+.right p{
+    font-size: 18px;
+    word-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+h2{
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+table,td,th{
+    text-align: center;
+    align-items: center;
+    border-collapse:collapse;
+    border:black 2px solid;
+    padding: 15px;
+    border-radius: 5px;
+    border-spacing: 5px;
+}
+img{
+    width: 420px;
+    height: 300px;
+    padding: auto;
+    margin: 6px;
+    
+}
+@media(max-width:910px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 100vw;
+    }
+    .subcontainer{
+        width: 100vw;
+    }
+    img{
+        display: none;
+    }
+    #hide{
+        display: none;
+    }
+    header{
+        font-size: 1.7vw;
+        height: 60px;
+    }
+
+}
+
+@media(max-width:500px){
+    header{
+        font-size: 2.2vw;
+    }
+}
