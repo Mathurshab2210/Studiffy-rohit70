@@ -140,6 +140,10 @@
             height: 140px;
             
         }
+        .break{
+            display: flex;
+            flex-direction: column;
+        }
        
        
       
@@ -159,6 +163,7 @@
         header{
             font-size: 22px;
         }
+       
       
       
         
@@ -177,6 +182,7 @@
             /* background-color: red; */
             padding-top: 100px;
         }  
+       
     }
     @media (max-width:530px) {
         .box-common{
@@ -226,20 +232,9 @@
         margin-top: -16px;
         }
 
-
-
-        /* .box-common{
-            margin: 10px;
+        .box-1content {
+            padding: 10px 0px 10px 11px
         }
-    
-        .box1 img {
-            width: 200px;
-            height: 140px;
-            
-        }
-        header{
-            font-size: 15px;
-        } */
       
     }
  @media (max-width:382px) {
@@ -253,11 +248,11 @@
             
         }
         .box-1content h5 {
-            font-size: 3.6vw;
+            font-size: 13.5px;
             margin-top: -2px;
         }
         .box-1content h2 {
-            font-size: 24px;
+            font-size: 22px;
             margin-top: -16px;
         }
 
