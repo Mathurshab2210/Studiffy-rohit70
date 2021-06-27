@@ -434,13 +434,12 @@ body{
 .section2bheading{
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 53%;
     justify-content: center;
     /* align-items: center; */
-    padding-right: 100px;
-    padding-top: 300px;
+    padding-right: 85px;
+    padding-top: 216px;
     /* background-color: red; */
-
 }
 .section2bheading h3{
     font-size: 60px;
