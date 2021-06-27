@@ -256,9 +256,16 @@ body{
   cursor: pointer;
 
   background-color: white;
-  border: 1px solid green;
   margin-top: 10px;
  
+}
+.section0button button:hover{
+    /* background-color: #ee0823; */
+  border: 1px solid whitesmoke;
+  background-color: black;
+  color: white;
+
+
 }
 @media (min-width: 1200px) {
     .divtext{
