@@ -17,6 +17,10 @@
     background-color: white;
         
     }
+    .three{
+        display: flex;
+        flex-direction: column;
+    }
     .container{
         width: 90%;
     /* background-color: red; */
@@ -101,6 +105,10 @@
             height: 175px;
             
         }
+        .break1{
+            display: flex;
+            flex-direction: column;
+        }
      
         
     }
@@ -130,6 +138,11 @@
         
     }
     @media (max-width:860px) {
+
+        .three-1{
+            display: flex;
+            flex-direction: column;
+        }
     
         .box-common{
             margin: 10px;
