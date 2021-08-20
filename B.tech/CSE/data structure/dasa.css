@@ -65,7 +65,7 @@ body{
     border-radius: 25px;
     padding: 15px;
     margin-top: 5px;
-   
+    margin-left: 6px;
    
 }
 .right{
@@ -126,9 +126,11 @@ img{
         flex-direction: column-reverse;
     }
     .subcontainer{
-        width:100%;
+        width:100vw;
     }
-    
+    .right{
+        width: 100vw;
+    }
     #side{
         display: none;
     }

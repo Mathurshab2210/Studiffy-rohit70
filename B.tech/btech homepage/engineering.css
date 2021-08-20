@@ -46,6 +46,9 @@ body{
 .civil img{
     width: 100%;
 }
+#civil1{
+    width: 43%;
+}
 
 
 @media (max-width:1200px){

@@ -17,10 +17,6 @@
     background-color: white;
         
     }
-    .three{
-        display: flex;
-        flex-direction: column;
-    }
     .container{
         width: 90%;
     /* background-color: red; */
@@ -105,10 +101,6 @@
             height: 175px;
             
         }
-        .break1{
-            display: flex;
-            flex-direction: column;
-        }
      
         
     }
@@ -138,11 +130,6 @@
         
     }
     @media (max-width:860px) {
-
-        .three-1{
-            display: flex;
-            flex-direction: column;
-        }
     
         .box-common{
             margin: 10px;
@@ -152,10 +139,6 @@
             width: 190px;
             height: 140px;
             
-        }
-        .break{
-            display: flex;
-            flex-direction: column;
         }
        
        
@@ -176,7 +159,6 @@
         header{
             font-size: 22px;
         }
-       
       
       
         
@@ -195,7 +177,6 @@
             /* background-color: red; */
             padding-top: 100px;
         }  
-       
     }
     @media (max-width:530px) {
         .box-common{
@@ -245,9 +226,20 @@
         margin-top: -16px;
         }
 
-        .box-1content {
-            padding: 10px 0px 10px 11px
+
+
+        /* .box-common{
+            margin: 10px;
         }
+    
+        .box1 img {
+            width: 200px;
+            height: 140px;
+            
+        }
+        header{
+            font-size: 15px;
+        } */
       
     }
  @media (max-width:382px) {
@@ -261,19 +253,11 @@
             
         }
         .box-1content h5 {
-            font-size: 13.5px;
+            font-size: 3.6vw;
             margin-top: -2px;
         }
         .box-1content h2 {
-            font-size: 22px;
+            font-size: 24px;
             margin-top: -16px;
         }
-
-        
     }
-
-@media(max-width:365px){
-    header{
-    padding:20px 10px 20px 10px;
-    }
-}
