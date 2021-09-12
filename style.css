@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.h-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url('img/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav img{
+    width: 170px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;    
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.nav-links>ul>li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ff9800;
+    display: block;
+    transition: 0.5s;
+}
+.nav-links>ul>li:hover::after{
+    width: 100%;
+}
+
+/* ---dropdown-- */
+
+.nav-links ul ul{
+    position: absolute;
+    display: none;
+    margin-top: 7px;
+}
+
+.nav-links ul li:hover > ul{
+    display: block;
+}
+
+.nav-links ul ul li{
+    padding: 0px 0px; 
+    text-align: left;
+    width: 80px;
+    margin-left: -26px;
+}
+.nav-links ul ul li a:hover{
+    color: rgb(216, 216, 216);
+}
+
+/* -----info-button----- */
+
+.h-info{
+    width: 90%;
+    position: absolute;
+    color: #fff;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.h-info h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-info p{
+    font-size: 20px;
+    margin: 10px;
+}
+.mbtn{
+    margin: 10px auto;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    padding: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.mbtn:hover{
+    background-color: #ff9800;
+}
+nav .fa{
+    display: none;
+}
+nav .fa-angle-down{
+    display: inline-block;
+    margin: auto 2px;
+    font-size: 22px;
+}
+
+/* -------------------responsive----------------------- */
+
+@media(max-width:800px){
+    .h-info h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(49, 49, 49);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav .fa-angle-down{
+        display: inline-block;
+        margin: auto 2px;
+        font-size: 22px;
+    }
+    .nav-links>ul{
+        padding: 30px;
+    }
+
+    .nav-links>ul>li::after{
+        content: "";
+        display: block;
+        background: transparent;
+    }
+    .nav-links ul ul{
+        position: relative;
+        margin: 0px;
+        padding-top: 12px;
+        
+    }
+    .nav-links ul ul li{
+        position: relative;
+        padding-top: 5px;
+    }
+    .nav-links ul ul li a{
+        color:#ff9800;
+    }
+
+    .nav-links ul li > ul{
+        display: block;
+    }
+    .showA{
+        display: none !important;
+    }
+    .showB{
+        display: none !important;
+    }
+}
+
+/* --------slider---------- */
+
+.mslider{
+    width: 98%;
+    margin: 20px auto;
+  }
+
