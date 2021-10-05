@@ -35,7 +35,7 @@
 
         <div class="firstpart">
             <img src="../../homepageimage/logo2.png" alt="logo">
-            <h1>Stud<span style="color: red">ify</span></h1>
+           <a href="../../index.html"> <h1>Stud<span style="color: red">ify</span></h1> </a>
         </div>
         
         <ul class="secoundpart" id="secoundparta">
@@ -54,7 +54,7 @@
                     <li><a href="../../fun/index.html">Fun</a></li>
                     <li><a href="../../motivation2/mot.html">Motivation</a></li>
                     <li><a href="../../E-library/E-library files/lib.html">E-Library</a></li>
-                    <li><a href="#Games">Games</a></li>
+                    <li><a href="../../game/index.html">Games</a></li>
                     <li id="contact">
                <a href="../../contact/contact.html"> <button class="search" style="cursor: pointer;">Contact Us</button></a>
 
@@ -206,8 +206,8 @@
                 <div class="footer-b">
                     <ul>
                         <p>CATOGORIES</p>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">E-Library</a></li>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../E-library/E-library files/lib.html">E-Library</a></li>
                         <li><a href="#">Notes</a></li>
                         <li><a href="#">Practice</a></li>
                         <li><a href="#">Video</a></li>
@@ -216,9 +216,9 @@
 
                 <div class="footer-c">
                     <ul>
-                        <p>COURSES</p>
-                        <li><a href="#">B.Tech</a></li>
-                        <li><a href="#">BBA</a></li>
+                        <p>PRACTICES</p>
+                        <li><a href="../../Practice/practice_engg.html">B.Tech</a></li>
+                        <li><a href="../../Practice/prac_ bba.html">BBA</a></li>
                         <li><a href="#">B.Sc(Agri)</a></li>
                         <li><a href="#">B.com</a></li>
                     </ul>
@@ -256,6 +256,27 @@
 
 
         });
+
+        document.getElementById("more").addEventListener("click" , function(){
+    
+    if(document.getElementById("submenu11").style.display == "flex"){
+        document.getElementById("submenu11").style.display = "none";
+    }
+    else
+        document.getElementById("submenu11").style.display = "flex"
+});
+document.getElementById("practice").addEventListener("click" , function(){
+
+    if(document.getElementById("submenu-0").style.display == "flex"){
+        document.getElementById("submenu-0").style.display = "none";
+    }
+    else
+        document.getElementById("submenu-0").style.display = "flex"
+});
+
+    
     </script>
+
+    
 
 </body>

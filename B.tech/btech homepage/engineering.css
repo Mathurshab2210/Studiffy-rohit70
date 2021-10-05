@@ -8,6 +8,9 @@ body{
     background-color: #faf9f9;
 
 }
+.firstpart a{
+    text-decoration: none;
+}
 .container{
     display: flex;
     width: 80%;
